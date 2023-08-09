@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" id="cssfile" href="style.css">
+	<meta charset="UTF-8">
+	<title>Meals</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<nav class="screenreader">
+		<a href="#content">Skip to Main content</a>
+	</nav>
+
+	<header>
+		<h1>Meals</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="why_siblings.html">Why us?</a>
+			<a href="meals.html">Meals</a>
+			<a href="booking.html">Booking</a>
+			<a href="careers.html">Careers</a>
+			<button id="mkDark" >Dark theme</button>
+		</nav>
+	</header>
+
+	<main>
+		<h4>From the ratings and reviews, this year’s meals were our best yet. We tried a new creative process this
+			year,
+			but I think the main reason is that our meal planner, has grown to become a total genius at understanding
+			what
+			meals work best for our members.<br>
+			In the spirit of the new year – and to kickstart 2022 being the year of NO EXCUSES in the kitchen – we put
+			together a list of our top 10 meals of 2021.
+		</h4>
+
+		<figure class="meal">
+			<h2><em>Beef and Barley Soup</em></h2>
+			<p>This warm, comforting soup was our top-rated meal of 2017, proving that simple ingredients can produce
+				super
+				flavorful results. This recipe consists of ingredients you can find year-round, so you can make this
+				dish
+				anytime you crave warmth and comfort.<br><br>
+				Many of our meal plan members simplified the recipe even more by making it in an Instant Pot for a quick
+				weeknight dinner. (Some of our members are huge Instant Pot fans; they created a Facebook Group
+				dedicated to
+				converting our meal plan recipes to be Instant Pot-friendly!
+			</p>
+			<img width="400" src="img/3_1.jpg" class="img" alt="Beef and Barley Soup"/>
+		</figure>
+
+
+		<figure class="meal">
+			<h2><em>Tuna Poke Bowl & Balsamic Chicken and Spinach Salad</em></h2>
+			<p>Tied for 2nd place, the Tuna Poke Bowl and the Balsamic Chicken & Spinach Salad are perfect options for
+				those that want to switch it up or enjoy a meal with fresh, seasonal fruits and veggies.
+			</p>
+			<img width="400" src="img/3_2.jpg" class="img" alt="Tuna Poke Bowl & Balsamic Chicken and Spinach Salad"/>
+			<img width="400" src="img/3_3.jpg" class="img" alt="Tuna Poke Bowl & Balsamic Chicken and Spinach Salad"/>
+		</figure>
+
+
+		<figure class="meal">
+			<h2><em>Maple-Dijon Panko Salmon</em></h2>
+			<p>Easy to make, uses ingredients you have in your pantry, healthy and flavorful, and comforting but unique
+				enough to make dinnertime memorable. The crunchy topping, which is a blend of sweet and savory flavors,
+				is a
+				huge hit with our cooking community.
+			</p>
+			<img src="img/3_1.jpg" class="img" alt="Maple-Dijon Panko Salmon"/>
+		</figure>
+
+	</main>
+
+
+	<footer>
+		<h3>Contacts:</h3>
+		<p>
+			3762, Ray Court<br>
+			Lumberton,<br>
+			North Carolina,<br>
+			Postcode: 28358<br>
+			Orders: 910-258-4514<br>
+			Business: 910-536-0022
+		</p>
+	</footer>
+	<script>
+		document.getElementById("mkDark").addEventListener('click', function(){
+			const css = document.getElementById("cssfile");
+			const dmb = document.getElementById("mkDark");
+
+			if(dmb.innerHTML == "Dark theme"){
+				css.setAttribute('href', 'darkmode.css');
+				dmb.innerHTML = 'Light theme';
+			} else {
+				css.setAttribute('href', 'style.css');
+				dmb.innerHTML = 'Dark theme';
+			}
+		});
+	</script>
+</body>
+
+</html>

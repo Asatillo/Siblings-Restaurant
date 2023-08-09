@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" id="cssfile" href="style.css">
+	<meta charset="UTF-8">
+	<title>Restaurant SIBLINGS</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<nav class="screenreader">
+		<a href="#content">Skip to Main content</a>
+	</nav>
+
+	<header>
+		<h1>Restaurant SIBLINGS</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="why_siblings.html">Why us?</a>
+			<a href="meals.html">Meals</a>
+			<a href="booking.html">Booking</a>
+			<a href="careers.html">Careers</a>
+			<button id="mkDark" >Dark theme</button>
+		</nav>
+	</header>
+	
+	<main>
+		<div class='cont1 flexbox-container'>
+			<div class="cont1-img flexbox-item flexbox-item-1">
+				<img width="100%" src="img/brothers.jpg" alt="Brothers"/>
+			</div>
+			<div class="cont1-txt flexbox-item flexbox-item-2">
+				<h3>
+					<aside>
+						A family–run collection<br> 
+						of restaurants<br>
+						founded in 2005<br>
+						by Michelin star brothers<br>
+						Chris & Jeff Galvin
+					</aside>
+				</h3>
+			</div>
+			<div class="axis main_axis"></div>
+			<div class="axis cross_axis"></div>
+		</div>
+
+		<div class='cont2 flexbox-container'>
+			<div class="cont2-txt flexbox-item flexbox-item-1">
+				<h3>Generous in spirit, ruled by nature</h3>
+				<p>We have worked with some incredible people<br> over the years. None
+					more so than our suppliers<br> – <em> farmers, fishermen, winemakers,<br>game suppliers and cheese makers</em>.<br> We have
+					known and worked with some <br>for over <b> 25 years </b>and walking a mile in their shoes<br> never fails to ground us.
+				</p>
+			</div>
+			<div class="cont2-img flexbox-item flexbox-item-2">
+				<img width="100%" src="img/1_2.jpg" alt="Hall 1"/>
+			</div>
+			<div class="axis main_axis"></div>
+			<div class="axis cross_axis"></div>
+		</div>
+
+		<div class='cont1 flexbox-container'>
+			<div class="cont1-img flexbox-item flexbox-item-1">
+				<img width="100%" src="img/1_3.jpg" alt="waiter"/>
+			</div>
+			<div class="cont1-txt flexbox-item flexbox-item-2">
+				<h3>What’s on at Galvin Restaurants</h3>
+				<p>
+					Wine tastings, masterclasses, live music events, book clubs. Check out
+					what’s on at our London restaurants or our Essex Pub. Visit <a href="booking.html">booking</a> page to make a reservation.
+				</p>
+			</div>
+			<div class="axis main_axis"></div>
+			<div class="axis cross_axis"></div>
+		</div>
+
+		<div class='cont2 flexbox-container'>
+			<div class="cont2-txt flexbox-item flexbox-item-1">
+				<h3>Generous in spirit, ruled by nature</h3>
+				<p>Located within the Rally Hotel, across 20th Street from Coors
+					Field, we offer a dining experience for both the young and young at heart, complete with upcoming
+					original affairs like themed brunches; an engaging dinner series with special guests; one-of-a-kind
+					dessert collaborations; and more. Come take a bite out of
+					Denver at The OG -- we'll see you soon!
+				</p>
+			</div>
+			<div class="cont2-img flexbox-item flexbox-item-1">
+				<img width="100%" src="img/1_4.jpg" alt="bar"/>
+			</div>
+			<div class="axis main_axis"></div>
+			<div class="axis cross_axis"></div>
+		</div>
+
+		
+	</main>
+	<footer>
+		<h3>Contacts:</h3>
+		<p>3762, Ray Court<br>
+			Lumberton,<br>
+			North Carolina,<br>
+			Postcode: 28358<br>
+			Orders: 910-258-4514<br>
+			Business: 910-536-0022
+		</p>
+	</footer>
+
+	<script>
+		document.getElementById("mkDark").addEventListener('click', function(){
+			const css = document.getElementById("cssfile");
+			const dmb = document.getElementById("mkDark");
+
+			if(dmb.innerHTML == "Dark theme"){
+				css.setAttribute('href', 'darkmode.css');
+				dmb.innerHTML = 'Light theme';
+			} else {
+				css.setAttribute('href', 'style.css');
+				dmb.innerHTML = 'Dark theme';
+			}
+		});
+	</script>
+</body>
+</html>

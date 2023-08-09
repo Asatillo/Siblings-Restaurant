@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" id="cssfile" href="style.css">
+	<meta charset="UTF-8">
+	<title>Careers</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<nav class="screenreader">
+		<a href="#content">Skip to Main content</a>
+	</nav>
+
+	<header>
+		<h1>Career opportunities</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="why_siblings.html">Why us?</a>
+			<a href="meals.html">Meals</a>
+			<a href="booking.html">Booking</a>
+			<a href="careers.html">Careers</a>
+			<button id="mkDark" >Dark theme</button>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<p>
+				Unfortunately, we do not hire currently. But if you dream to work at our restaurant, you can follow us on 
+				<a href="https://www.instagram.com/">Instagram</a>, <a href="https://www.facebook.com/">Facebook</a> to read out latest news about
+				new vacancies or send your CV to our <a href="mailto:asatillo.akhmedov@gmail.com?subject=Application for job">e-mail</a><br><br>
+			</p>
+			<img width="400" src="img/stockworkers.jpg" class="img" alt="Restaurant workers"/>
+		</section>
+	</main>
+	<footer>
+		<h3>Contacts:</h3>
+		<p>3762, Ray Court<br>
+			Lumberton,<br>
+			North Carolina,<br>
+			Postcode: 28358<br>
+			Orders: 910-258-4514<br>
+			Business: 910-536-0022
+		</p>
+	</footer>
+	<script>
+		document.getElementById("mkDark").addEventListener('click', function(){
+			const css = document.getElementById("cssfile");
+			const dmb = document.getElementById("mkDark");
+
+			if(dmb.innerHTML == "Dark theme"){
+				css.setAttribute('href', 'darkmode.css');
+				dmb.innerHTML = 'Light theme';
+			} else {
+				css.setAttribute('href', 'style.css');
+				dmb.innerHTML = 'Dark theme';
+			}
+		});
+	</script>
+</body>
+
+</html>

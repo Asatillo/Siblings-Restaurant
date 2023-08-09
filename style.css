@@ -1,0 +1,292 @@
+body{
+	width: 75%;
+	margin: 0  auto;
+  font-family: 'Open Sans', Verdana, Arial, Tahoma, sans-serif;
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header, main, footer{
+  background-color: #fff;
+  padding: 10px;
+  width: 80%;
+  min-width: 300px;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+}
+
+header{
+  border-radius: 5px 5px 0 0;
+  background-color: white;
+}
+
+main{
+  border-bottom: 2px solid black;
+}
+
+footer{
+  border-radius:  0 0 5px 5px;
+  padding-top: 0;
+  background-color: rgb(222, 213, 202);
+}
+
+.screenreader a{
+  position: absolute;
+  left: -9999px;
+}
+
+.screenreader a:focus{
+  position: static;
+  left: -9999px;
+}
+
+img{
+  border-radius: 30px;
+}
+
+h1 {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  color: #e7ae03;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+}
+
+h2{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+footer p{
+  font-size: 12px;
+  padding-left: 40px;
+}
+
+footer h3{
+  text-align: left;
+  padding-left: 40px;
+}
+.cent{
+  text-align: center;
+}
+
+/* .cont1{
+  /* display: flex;
+  align-items: center; 
+  margin-top: 10px;
+  margin-left: 10%;
+} */
+
+.cont1-txt{
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+/* .cont1 p{
+	text-align: right;
+} */
+
+/* .cont2{
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  /* padding-left: 10%; 
+} 
+*/
+
+/* .cont2-txt{
+  margin-left: 5%;
+  width: 50%;
+}
+
+.cont2-txt p{
+  width: 100%;
+} */
+
+/* .cont2-txt p{
+  width: 90%;
+  font-size: 15px;
+  padding: 10px;
+} */
+
+
+
+/* .cont2-img {
+  width: 50%;
+ position: absolute;
+  right: 300px; 
+} 
+*/
+
+nav{
+  width: 100%;
+  top:10px; 
+  text-align:right;
+  font-size: 24px;
+}
+
+nav a{
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#1358ce;
+  margin:0 5px;
+  font-size:14px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+
+article {
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.img {
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.meal{
+  border-top: 3px solid #FFC000;
+}
+
+.meal, h4{
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.meal p, h4{
+  font-size: 17px;
+}
+
+table{
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+video {
+  padding-top: 10px;
+  margin:auto;
+  display:block;
+  border: 0;
+  max-width: 80%;
+}
+
+.reserve{
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.reserve h2{
+  text-align: center;
+}
+
+
+input, textarea, select{
+  resize: none;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+button{
+  background-color: green;
+  text-align: center;
+  margin: auto;
+  margin-top: 5px;
+  padding-top: 2px;
+  border: none;
+  height: 25px;
+  width: 140px;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+button:active{
+  background-color: rgb(1, 85, 1);
+}
+
+#mkDark{
+  background-color: black;
+  color: white;
+}
+
+#mkDark:active{
+  background-color: rgb(54, 52, 52);
+}
+
+.buttons{
+  padding-left: 15%;
+}
+
+#reset{
+  background-color: rgb(229, 154, 16);
+}
+
+#reset:active{
+  background-color: rgb(193, 131, 16);
+}
+
+.flexbox-container{
+  height: 450px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.flexbox-item{
+  width: 200px;
+  margin: 10px;
+}
+
+.flexbox-item-1{
+  min-height: 100px;
+}
+
+.flexbox-item-2{
+  min-height: 200px;
+}

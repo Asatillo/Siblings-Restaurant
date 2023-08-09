@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" id="cssfile" href="style.css">
+	<meta charset="UTF-8">
+	<title>Why Siblings?</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<nav class="screenreader">
+		<a href="#content">Skip to Main content</a>
+	</nav>
+
+	<header>
+		<h1>Why Siblings?</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="why_siblings.html">Why us?</a>
+			<a href="meals.html">Meals</a>
+			<a href="booking.html">Booking</a>
+			<a href="careers.html">Careers</a>
+			<button id="mkDark" >Dark theme</button>
+		</nav>
+	</header>
+
+	<main>
+		<h2 class="cent">More than just a Michelin-starred restaurant with rooms</h2>
+
+
+		<img width="400" src="img/2_1.jpg" class="img" alt="Younger brother"/>
+		<h3>
+			<em>
+				Homegrown Creativity
+			</em>
+		</h3>
+		<article>
+			Chef Tommy Banks’ talent is in itself truly remarkable. He was <em><b>  Britain’s youngest Michelin-starred chef</b></em>  in
+			2013 and won Great British Menu in 2016 and 2017. The Michelin-starred Black Swan was awarded <em><b>‘Best
+			Restaurant in the UK 2018’</b></em>  by The Food and Travel Magazine, as well <em><b>‘Best Fine Dining Restaurant in the
+			World’</b></em> in 2017 and, more recently, <em><b>‘UK’s Best Fine Dining Restaurant’</b></em> in 2020 by TripAdvisor.<br><br>
+			<em>
+				“I see the Black Swan as a co-operative of minds. We have great people working here; some real
+				characters
+				with tremendous talent and it’s their coming together that creates something special. We want our guests
+				to
+				feel part of it and experience it with us. It’s not just a job for us, it’s a lifestyle”
+			</em>
+		</article>
+		<p class="cent">
+			<em>
+				- Tommy Banks
+			</em>
+		</p>
+
+
+
+		<img width="400" src="img/2_2.jpg" class="img" alt="Family"/>
+		<h3>
+			<em>
+				Informal Hospitality
+			</em>
+		</h3>
+		<article>
+			During your stay you will meet many of our staff. Both the kitchen and front-of-house teams spend many hours
+			working outside; they really understand what the food is and why it’s on the plate; they can tell you the
+			whole story from start to finish.<br><br>
+			<em>
+				“I like to think that we have brushed aside much of the formality normally associated with fine dining;
+				for
+				us it’s about our guests having fun; so it’s good food, good service and a good time”
+			</em>
+		</article>
+		<p class="cent">
+			<em>
+				- Anne Banks
+			</em>
+		</p>
+
+		<img width="400" src="img/2_3.jpg" class="img" alt="Kitchen"/>
+		<h3>
+			<em>
+				Something unique
+			</em>
+		</h3>
+		<article>
+			<em>
+				“We’re lucky to have such a creative team. Growing and foraging so much ourselves really gives us an
+				edge
+				and a chance to do things differently. Guests get something unique to us; our personality, our place and
+				our
+				ideas.”
+			</em>
+		</article>
+		<p class="cent">
+			<em>
+				- James Banks
+			</em>
+		</p>
+		<h3>
+			<em>
+				Because it is funny!
+			</em>
+		</h3>
+		<video width="560" height="315" poster="img/stockworkers.jpg" controls>
+			<source src="vid/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" type="video/mp4">
+			<source src="vid/videoplayback.webm" type="video/webm">
+			<track src="vid/subtitles.vvt" label=”English” kind=”captions” srclang=”en-us” >
+			<p>Your browser doesn't support html5</p>
+		</video>
+	</main>
+	<footer>
+		<h3>Contacts:</h3>
+		<p>3762, Ray Court<br>
+			Lumberton,<br>
+			North Carolina,<br>
+			Postcode: 28358<br>
+			Orders: 910-258-4514<br>
+			Business: 910-536-0022
+		</p>
+	</footer>
+	<script>
+		document.getElementById("mkDark").addEventListener('click', function(){
+			const css = document.getElementById("cssfile");
+			const dmb = document.getElementById("mkDark");
+
+			if(dmb.innerHTML == "Dark theme"){
+				css.setAttribute('href', 'darkmode.css');
+				dmb.innerHTML = 'Light theme';
+			} else {
+				css.setAttribute('href', 'style.css');
+				dmb.innerHTML = 'Dark theme';
+			}
+		});
+	</script>
+</body>
+
+</html>

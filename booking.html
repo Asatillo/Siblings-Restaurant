@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" id="cssfile" href="style.css">
+	<meta charset="UTF-8">
+	<title>Booking</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<nav class="screenreader">
+		<a href="#content">Skip to Main content</a>
+	</nav>
+
+	<header>
+		<h1>Booking information</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="why_siblings.html">Why us?</a>
+			<a href="meals.html">Meals</a>
+			<a href="booking.html">Booking</a>
+			<a href="careers.html">Careers</a>
+			<button id="mkDark" >Dark theme</button>
+		</nav>
+
+	</header>
+
+	<main>
+		<div class="meal">
+			<h2>Halls</h2>
+			<table>
+				<tr>
+					<th class="tg-baqh">Name</th>
+					<th class="tg-baqh">Capacity(people)</th>
+					<th class="tg-baqh">Specifics</th>
+				</tr>
+				<tr>
+					<td class="tg-baqh">Main hall</td>
+					<td class="tg-baqh">35</td>
+					<td class="tg-baqh">Specialized for impaired people</td>
+				</tr>
+				<tr>
+					<td class="tg-baqh">Base floor lounge</td>
+					<td class="tg-baqh">24</td>
+					<td class="tg-baqh">Bar</td>
+				</tr>
+				<tr>
+					<td class="tg-baqh">Terrace</td>
+					<td class="tg-baqh">40</td>
+					<td class="tg-baqh">Has playing area for children</td>
+				</tr>
+
+			</table>
+
+			<h3>
+				<em>
+					Main Hall
+				</em>
+			</h3>
+			<img width="100%" src="img/4_1.jpg" alt="Main hall" /><br>
+			<h3>
+				<em>
+					Lounge Zone
+				</em>
+			</h3>
+			<img width="100%" src="img/4_2.jpg" alt="Lounge zone" /><br>
+			<h3>
+				<em>
+					Terrace
+				</em>
+			</h3>
+			<img width="100%" src="img/4_3.jpg" alt="Terrace" /><br>
+			<hr>
+		</div>
+		<form class="reserve" method="post" name="Booking" action="send_to_email.php">
+			<h2>Book a table</h2>
+			<label for="fname" >Full name:</label><br>
+			<input type="text" id="fname" name="fname" maxlength="25" ><br>
+			<label for="halls">Choose a hall:</label>
+			<select name="halls" id="halls">
+				<option value="terrace">Terrace</option>
+				<option value="main">Main hall</option>
+				<option value="lounge">Lounge zone</option>
+			</select><br>
+			<label for="rese" >About reservation:</label><br>
+			<textarea width="80%" name="rese" id="rese" rows="6" cols="60" maxlength="300"> </textarea><br>
+			<label for="date" >Date of reservation:</label><br>
+			<input type="date" id="date" name="date"><br>
+			<input type="radio" id="glutfree" name="food_option" value="Gluten">
+			<label for="glutfree">Gluten free meals</label><br>
+			<input type="radio" id="halal" name="food_option" value="Halal">
+			<label for="halal">Halal products</label><br>
+			<input type="radio" id="vegan" name="food_option" value="Vegan/Vegetarian">
+			<label for="halal">Vegan/vegetarian meals</label><br>
+			<input type="checkbox" id="children" name="children" value="Child">
+			<label for="children">With children</label><br>
+			<label for="email" >Email:</label><br>
+			<input type="email" name="email" id="email" pattern=".+@gmail\.com" size="30" required maxlength="30"><br>
+			<label for="phone">Phone number:</label><br>
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="9"><br>
+			<input type="checkbox" id="agree" name="agree">
+			<label for="agree"><em> by signing this I agree to proceed my information</em></label><br>
+			<div class="buttons">
+				<button id="reset"><b> Reset</b></button>
+				<button><b> Submit</b></button>
+			</div>
+		</form>
+
+	</main>
+
+	<footer>
+		<h3>Contacts:</h3>
+		<p>
+			3762, Ray Court<br>
+			Lumberton,<br>
+			North Carolina,<br>
+			Postcode: 28358<br>
+			Orders: 910-258-4514<br>
+			Business: 910-536-0022
+		</p>
+	</footer>
+	<script>
+		document.getElementById("mkDark").addEventListener('click', function(){
+			const css = document.getElementById("cssfile");
+			const dmb = document.getElementById("mkDark");
+
+			if(dmb.innerHTML == "Dark theme"){
+				css.setAttribute('href', 'darkmode.css');
+				dmb.innerHTML = 'Light theme';
+			} else {
+				css.setAttribute('href', 'style.css');
+				dmb.innerHTML = 'Dark theme';
+			}
+		});
+	</script>
+</body>
+
+</html>
